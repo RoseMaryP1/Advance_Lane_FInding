@@ -28,7 +28,7 @@ Each image converted to grayscale before passing to opencv provided `findChessbo
 
 The detected coners of the example images is shown below: 
 
-![alt text][output/camera_calibrated.png]
+![alt text][./output/camera_calibrated.png]
 
 
 #### 2. Distortion-correction on images.
