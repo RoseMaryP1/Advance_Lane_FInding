@@ -28,7 +28,7 @@ Each image converted to grayscale before passing to opencv provided `findChessbo
 
 The detected coners of the example images is shown below: 
 
-![result] [/output/camera_calibrated.png]
+![9x6 Chessboard Corners Detected](./output/camera_calibrated.png)
 
 
 #### 2. Distortion-correction on images.
@@ -42,11 +42,11 @@ The values returned by `cv2.calibrateCamera()` will be used later to undistort o
 
 The sample results on a chess board image and test image is shown below:
 
-![alt text][output/undistroted_img.png]
+![Undistroted Image](output/undistroted_img.png)
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The cperspective transform is called using a function called `birds_eye()`, in the 5th cell of the IPython notebook.  The `birds_eye()` function takes as inputs an image (`img`) along with few argument s to display and read images.  I chose the hardcode the source and destination points in the following manner:
+The perspective transform is called using a function called `birds_eye()`, in the 5th cell of the IPython notebook.  The `birds_eye()` function takes as inputs an image (`img`) along with few argument s to display and read images.  I chose the hardcode the source and destination points in the following manner:
 
 ```python
     src = np.float32([[490, 482],[810, 482],
@@ -56,7 +56,7 @@ The cperspective transform is called using a function called `birds_eye()`, in t
 ```
 The result applied perspective tranform is shown below:
 
-![alt text][output/wraped_image.png]
+![Result](output/wraped_image.png)
 
 
 #### 4 Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
@@ -65,7 +65,7 @@ I used a combination of color and gradient thresholds to generate a binary image
 
 Here's is the result obtained from each and combination of both:
 
-![alt text][output/thershold.png]
+![binary image](output/thershold.png)
 
 #### 5. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -81,7 +81,7 @@ Then it calculate the radius of curvature of both the left and right lanes detec
 
 Once the lanes are detected on the wrapped image I tried to plot it back to the orginal image resulting the following output
 
-![alt text][output/lane_fitting_in_orginal_img.png]
+![lane_fitting](output/lane_fitting_in_orginal_img.png)
 
 ---
 
@@ -89,7 +89,7 @@ Once the lanes are detected on the wrapped image I tried to plot it back to the 
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_result.mp4)
+Here's a [link to my video result](project_result.mp4)
 
 ---
 
