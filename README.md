@@ -98,4 +98,3 @@ Here's a [link to my video result](project_result.mp4)
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 I tried different methods to get a better thershold and found the combination looks much better.
-But i am doubted the result on a show road, where the lanes are not much clear
